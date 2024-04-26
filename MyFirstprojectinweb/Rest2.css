@@ -1,0 +1,50 @@
+/* body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/.jpg");
+  min-height: 90%;
+} */
+
+.navbar a {
+  background-color: lightblue;
+  display: flex;
+  text-decoration: none;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  /* padding: 10px 10px; */
+  /* align-items: center; */
+}
+
+.header {
+  background-image: url("img/pexels-photo-19119943.webp");
+  background-color: lightpink;
+  position: relative;
+  padding: 20px;
+}
+
+/* .time-open {
+  position: relative;
+} */
+
+.sp0 {
+  background-color: aqua;
+  position: absolute;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.sp1 {
+  font-size:100px
+} 
+
+.sp2 {
+  font-size: 60px;
+}
+
+.menu-button {
+font-size: 50px;
+justify-content: center;
+}
