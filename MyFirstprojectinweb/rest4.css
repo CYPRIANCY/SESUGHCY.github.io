@@ -1,5 +1,5 @@
 body {
-  background-color: #d4f9ef;
+  background-color: #f2fffc;
 }
 
 * {
@@ -51,6 +51,7 @@ color: #fff;
 font-size: 1.5rem;
 margin-bottom: 1rem;
 letter-spacing: 0.1rem;
+z-index: 1;
 }
 
 .showcase .overlay p {
@@ -159,6 +160,6 @@ font-size: 0.9rem;
 
 @media (min-width: 1280px) {
   .showcase .overlay h1 {
-    font-size: 6rem;
+    /* font-size: 6rem; */
   }
 }

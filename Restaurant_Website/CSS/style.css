@@ -1,0 +1,825 @@
+@media screen {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Ubuntu:ital,wght@0,500,0,700;1,400&diplay=swap')
+} 
+
+body {
+  margin-top: 0rem;
+  padding-top: 1.25rem;
+}
+
+:root {
+  --primary_color: #e74c3c;
+  --white_color: #fff;
+
+  --ubuntu: "ubuntu";
+  --righteous: "Righteous";
+
+  --box-shadow: 10px 10px 5px rgba(0,0,0,.3);
+}
+
+html {
+  font-size: 70%;
+}
+
+* {
+  box-shadow: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+/* ------- utaility classes start------ */
+a {text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.main_heading {
+  font-size: 4rem;
+  font-family: var(--righteous);
+  text-align: center;
+  color: var(--white_color);
+}
+
+.main_heading-1 {
+  font-size: 4rem;
+  font-family: var(--righteous);
+  text-align: center;
+  color: #000;
+}
+
+.normal_heading {
+  font-size: 2rem;
+  font-family: var(--righteous);
+  color: var(--white_color);
+  text-align: center;
+}
+
+.normal_heading-1 {
+  font-size: 2rem;
+  font-family: var(--righteous);
+  color: var(--primary_color);
+  text-align: center;
+}
+
+/* ------- utaility classes close------ */
+
+/* Header start */
+ /* header {
+  width: 100%;
+  background-color: rgb(0, 0, 0,0.6);
+  position: fixed;
+  padding: 1.5rem 0;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+
+header .sticky {
+  background: #000;
+}
+
+.logo img {
+  display: block;
+  object-fit: cover;
+  width: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar nav li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navbar nav li a {
+  font-size: 1.3rem;
+  color: var(--white_color);
+  position: relative;
+}
+
+.navbar nav li a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: var(--primary_color);
+  width: 0%;
+  left: 0;
+  top: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar nav li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  font-size: 2.2rem;
+  color: var(--white_color);
+  cursor: pointer;
+}  */
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  list-style-type: none;
+  color: none;
+} 
+
+.header div h2 {
+  font-size: 1.5rem;
+} */
+
+.header .navbar {
+  /* opacity: 0; */
+  /* position: absolute; */
+  /* left: -100vw; */
+  /* transition: all 0.5s ease-in-out; */
+}
+
+/* .header .navbar.open {
+  left: 0;
+  background-color: #f1f1f1;
+  width: 70%;
+  margin-left: 1.25rem;
+  padding: 1rem;
+
+} 
+
+.header .menu-button:hover {
+  cursor: pointer;
+} 
+
+.header .menu-button div {
+  background-color: #333;
+  height: 0.3rem;
+  width: 1rem;
+  margin-top: 0.15rem;
+  transition: all 0.5s ease-in-out;
+} 
+
+
+.header .menu-button div:nth-child(2) {
+  width: 2rem;
+} 
+
+.header .menu-button div:last-child {
+  width: 1.5rem;
+} 
+
+.header .menu-button.clicked div:first-child {
+  width: 2rem;
+  transform: rotate(40deg);
+}
+
+
+.haeder .menu-button.clicked div:nth-child(2) {
+  opacity: 0;
+} 
+
+.header .menu-button.clicked div:nth-child(3) {
+  width: 2rem;
+  transform: rotate(-40deg);
+  margin-top: -0.8rem;
+}   */
+
+ 
+
+/* Header close */
+
+
+/* Showcase start */
+#showcase {
+  background: url('/imgs/pexels-the-castlebar-3902897-19119765.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  position: relative;
+  z-index: -10;
+}
+
+#showcase::before {
+  content: "";
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -11;
+}
+
+#showcase .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#showcase .content h2 {
+  font-size: 7rem;
+  font-family: var(--righteous);
+  color: var(--white_color);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#showcase .content h3 {
+  font-size: 3rem;
+  font-family: var(--righteous);
+  color: var(--white_color);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* Showcase close */
+
+
+/* Special offers start */
+#sp_offer {
+  padding: 10rem 0;
+}
+
+.sp_content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+  grid-gap: 4rem;
+}
+
+.headings h2 {
+  font-size: 4rem;
+  font-family: arial;
+}
+
+.headings h3 {
+  font-size: 2rem;
+  font-family: arial;
+  color: var(--primary_color);
+}
+
+.imgs_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.imgs {
+  display: flex;
+  align-items: center;
+}
+
+.imgs img {
+  display: block;
+  object-fit: cover;
+  width: 50%;
+  /* height: 50s%; */
+}
+
+.content_for_img {
+padding: 3rem;
+}
+
+.content_for_img h4{
+  font-size: 2rem;
+  padding: 4.5rem;
+  font-family: arial;
+}
+
+.content_for_img p {
+  font-size: 1.2rem;
+  font-family: arial;
+  line-height: 1.5rem;
+}
+
+.imgs_content .price {
+  font-size: 3rem;
+  font-family: arial;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.right_side_content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.img_right_side img {
+  width: 600px;
+  margin-top: 10rem;
+  height: 500px;
+}
+
+.right_side_content {
+  position: relative;
+  width: 100%;
+}
+
+.img_right_side .over_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%,-50%);
+  padding: 4rem;
+  text-align: center;
+  background-color: var(--primary_color);
+  color: white;
+  border-radius: 60%;
+}
+
+.over_img h2 {
+  font-size: 2rem;
+}
+
+.over_img a{
+  color: var(--white_color);
+}
+
+/* Special offers close */
+
+
+/* Reservartion Now start */
+#reservation_tbl {
+  background: url(../imgs/free-photo-of-woman-eating-gyros-and-french-fries-in-a-restaurant.jpeg);
+  background-attachment: fixed;
+  padding: 6rem 0;
+}
+
+.from_data {
+  background: var(--primary_color);
+  padding: 4rem;
+  width: 50%;
+  color: var(--white_color);
+}
+
+/* .from_data h2 {
+  font-size: 2rem;
+  font-family: var(--righteous);
+  color: var(--white_color);
+}
+ 
+.from_data h3 {
+  font-size: 4rem;
+  font-family: var(--righteous);
+  color: var(--white_color);
+}  */
+
+.from_data form {
+  padding: 4rem 0;
+}
+
+.from_data form input {
+  width: 49.5%;
+  padding: 0.7rem 0.4rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.from_data form textarea {
+  width: 100%;
+  padding: 1rem 0.4rem;
+}
+
+.from_data form button {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  padding: 0.9rem 0;
+  margin-top: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.from_data form button:hover {
+  background: #ccc;
+}
+
+/* Reservartion Now close */
+
+
+/* Deal Today  start */
+/* .deal_today {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: url(../imgs/pexels-photo-19117613.webp) no-repeat;
+} */
+/* .container {
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+.card_content {
+  display: flex;
+  align-items: center;
+} */
+/* .arrow-left {
+  height: 150px;
+  cursor: pointer;
+} */
+/* .arrow-right {
+  transform: rotate(180deg);
+} */
+/* .frame {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+} */
+/* .slider {
+  display: flex;
+  transition: all 1s ease;
+} */
+
+/* .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bottom {
+  display: flex;
+  gap: 30px;
+}
+.button {
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  border: 1px solid black;
+  cursor: pointer;
+}  */
+
+
+
+
+ #deal_today {
+  padding: 10rem 0;
+  /* background: url(../imgs/pexels-photo-19117613.webp) no-repeat;  */
+}
+
+#deal_today .card_content {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#deal_today .cards {
+  margin: 6rem 0;
+}
+
+#deal_today .card_content h4 {
+  font-family: var(--ubuntu);
+  font-size: 2rem;
+}
+
+#deal_today .card_content .price {
+  font-size: 2rem;
+  color: var(--primary_color);
+  font-weight: 600;
+} 
+
+/* Deal Today  close */
+
+
+/* Food lover  Start */
+#food_lover {
+  padding: 10rem 0;
+  background: #f4f4f4;
+}
+
+.food_lover_container {
+  margin: 3rem 0;
+}
+
+.btn_container {
+  margin: 4rem 0;
+  width: 100%;
+  display: inline-block;
+  color: #000;
+  text-align: center;
+}
+
+.btn-cat {
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  margin: 0.2rem;
+  border: 1px solid #ddd;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  transition: all0.5s ease-in-out;
+}
+
+.btn-cat:hover,.active_btn {
+  background: var(--primary_color);
+  color: var(--white_color);
+}
+
+.menus_items_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.menus_items_container .img_cards {
+  border: 1px solid #ddd;
+  box-shadow: var(--box-shadow);
+}
+
+.img_cards img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.img_cards p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--ubuntu);
+}
+
+.img_cards .price {
+  color: var(--primary_color);
+  font-size: 1.8rem;
+}
+
+.img_cards img:hover{
+  transform: scale(1.1);
+}
+
+/* Food lover  close */
+
+
+/* Customeer Feedback Start */
+#customer_feedback {
+  padding: 10rem 0;
+  background: url(../imgs/pexels-the-castlebar-3902897-19119765.jpg) no-repeat center center/cover;
+   background-attachment: fixed;
+  position: relative;
+  /* z-index: -1; */
+}
+
+#customer_feedback::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8 );
+  z-index: -1;
+}
+
+
+.customer_cards_container {
+  margin: 4rem 0;
+  /* z-index: 1; */
+} 
+
+.customer_card {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 3rem;
+  box-shadow: var(--box-shadow);
+}
+
+.customer_card img  {
+  display: block;
+  object-fit: contain;
+  border-radius: 200%;
+  margin: auto;
+}
+
+.customer_card p {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 2rem 0;
+}
+
+.customer_card .name {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--primary_color);
+}
+
+/* Customeer Feedback close */
+
+
+/* Upcoming events Start */
+.up_coming_events {
+  background: url(../imgs/free-photo-of-hands-of-woman-eating-dinner-in-restaurant.jpeg) no-repeat;
+  padding: 10rem 0;
+}
+
+.events_cards_container {
+  margin: 6rem 0;
+}
+
+.events_card {
+  border: 1px solid #ddd;
+  box-shadow: var(--box-shadow);
+}
+
+.events_card img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.events_comtent {
+  padding: 2rem;
+  text-align: justify;
+}
+
+.events_comtent {
+  padding: 2rem;
+  text-align: justify;
+}
+
+.event_content p {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 2rem;
+}
+
+.event_content a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+ color: var(--primary_color);
+}
+
+/* Upcoming events close */
+
+
+/* Static Counter start */
+#static_counter {
+  background: url(../imgs/free-photo-of-hands-of-woman-eating-dinner-in-restaurant.jpeg);
+  padding: 10rem 0;
+  position: relative;
+  z-index: -1;
+}
+
+#static_counter::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8 );
+  z-index: -1;
+}
+
+.counters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  color: var(--primary_color);
+  grid-gap: 2rem;
+}
+
+.counter {
+  border: 1px solid var(--white_color);
+  padding: 2rem;
+  color: var(--primary_color);
+  border-radius: 5px;
+}
+
+.num {
+  font-size: 8rem;
+  font-family: var(--righteous);
+}
+
+.counter h2 {
+  font-size: 2rem;
+  font-family: var(--ubuntu);
+  color: var(--white_color);
+}
+
+/* Static Counter close */
+
+/* Chef Start */
+#Chef {
+  padding: 10rem 0;
+}
+
+.Chef_container {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.Chef_cards {
+ border: 1px solid #ddd;
+}
+
+.Chef_content {
+  padding: 2rem;
+}
+
+
+.position {
+font-size: 1.5rem;
+color: var(--primary_color);
+}
+
+.socail_icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.socail_icons i{
+  cursor: pointer;
+}
+
+/* Chef close */
+
+
+/* Footer Start */
+#footer {
+  background-color: #212121;
+  padding: 4rem 0;
+  color: var(--white_color);
+  font-size: 1.3rem;
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.about_us img{
+  display: block;
+  object-fit: cover;
+  width: 50%;
+}
+
+.about_us img {
+  width: 50px;
+  height: 40px;
+}
+
+
+.about_us p {
+  line-height: 1.8;
+  padding-bottom: 2rem;
+}
+
+.about_us a{
+  color: var(--primary_color);
+}
+
+.footer_container h2{
+  padding-bottom: 3rem;
+  color: var(--primary_color);
+}
+
+.opening_hours {
+  line-height: 1.8;
+}
+
+.opening_hours .day, .email, .add {
+ color: var(--primary_colors);
+}
+
+.opening_hours .day span {
+color: var(--white_color);
+}
+
+footer {
+  background: #171717;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+  color: var(--white_color);
+}
+
+footer a{
+  color: var(--primary_color);
+}
+
+/* Footer close */
