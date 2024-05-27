@@ -17,7 +17,7 @@
   .from_data {
     width: 70%;
   }
-
+/* 
   .header .navbar {
     position: relative;
     left: 0;
@@ -29,7 +29,7 @@
     align-items: center;
     margin: auto;
 
-  } 
+  }  */
   
 }
 
@@ -60,7 +60,7 @@
     transform: all 0.5s ease-in-out;
   }  */
 
-  nav.active {
+  /* nav.active {
     right: 0%;
     transform: all 1s ease-in;
   }
@@ -81,23 +81,46 @@
     left: 90%;
     margin: 25px;
   } 
-}
+} */
 
 /* 768px */
 @media (max-width: 678px) {
+  
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .burger {
+      display: flex;
+  }
+
+  .menu-items {
+      flex-direction: column;
+  }
+}
+  /*
   .header .navbar {
     position: relative;
     left: 0;
   }
-
+  */
+  /*
   .header .navbar {
     display: flex;
     /* justify-content: space-between; */
     /* align-items: center; */
-    margin: auto;
+    /* margin: auto; */
 
   }
-
+  
+  /*
   .header .navbar.open {
     background-color: transparent;
     width: auto;
@@ -107,9 +130,9 @@
     padding: 0;
   }
 
-  /* .header .menu-button {
+  .header .menu-button {
     display: none;
-  }  */
+  }  
 
 
 
@@ -139,6 +162,7 @@
   .container .menu-button {
     display: none;
   }  
+  */
     /* specail offer start */
 
   #sp_offer {
@@ -171,10 +195,6 @@
     object-fit: cover;
     width: 50%;
     /* height: 50s%; */
-  }
-  
-  .content_for_img {
-  /* padding: 3rem; */
   }
   
   .content_for_img h4 {
@@ -268,6 +288,7 @@
   }
 
 }
+  
 
 @media (max-width: 520px) {
   /* Food Lover start */

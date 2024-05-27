@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+  });
+});
+
 // let menus = document.querySelector("nav");
 // let menuBtn = document.querySelector(".menu-btn");
 // let closeBTN = document.querySelector(".close-btn");
